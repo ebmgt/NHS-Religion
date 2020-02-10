@@ -10,3 +10,9 @@ Our files:
 * [R](https://www.r-project.org/) file for analysis is in the R directory above.
 
 rbadgett@kumc.edu
+
+-------------------------------
+
+[Edit this page](../../edit/master/README.md) - [History](../../commits/master/README.md)  - 
+[Issues and comments](../../issues?q=is%3Aboth+is%3Aissue)
+
