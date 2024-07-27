@@ -3,11 +3,10 @@
 Short URL: https://ebmgt.github.io/nhs-religion
 
 ## Our files:
-* Datafile extracted from the NHS source files, is in the data directory above.
-* [R](https://www.r-project.org/) file for analysis is in the R directory above.
+* See directories listed above
 
 ## Source files at original websites
-* [Links to source files at NHS websites](https://ebmgt.github.io/nhs-source/)
+* [Source files at NHS websites](https://www.nhsstaffsurveys.com/results/national-results/)
 
 rbadgett@kumc.edu
 
