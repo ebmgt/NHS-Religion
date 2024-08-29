@@ -49,6 +49,9 @@ function_libraries_install(packages_meta)
 
 # Parameters -----
 #* Select data sources ----
+# Not available in this version
+
+#* Select outcome sources ----
 Outcome.source <- tk_select.list(c('Burned_out_rate',
                                    'Stress'), 
                                  preselect = 'Burned_out_rate', multiple = FALSE,
@@ -136,7 +139,7 @@ if (subgroup.by.years == 'Yes'){
   grid.text('Notes:', 0.08, 0.08, hjust=0, gp=gpar(cex=1, font=2))
   Footer <- paste0("1. Filename: ",  basename(filename))
   grid.text(Footer,   0.08, 0.04, hjust=0, gp=gpar(cex=1))  #grid.text(Footer, 0.10, 0.075, hjust = 0, gp=gpar(cex=1))
-  function_plot_print(paste0('Forest-plot_', basename(filename), ' - subgroup by years ', subgroup.by.years), 1000, 400)
+  function_plot_print(paste0('Forest-plot_', Outcome.source,'- ', basename(filename), ' - subgroup by years ', subgroup.by.years), 1000, 400)
 }
 
 
