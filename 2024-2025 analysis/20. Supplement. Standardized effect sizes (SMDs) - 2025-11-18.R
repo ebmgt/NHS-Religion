@@ -4,14 +4,15 @@
 #* Code GNU GPLv3 https://choosealicense.com/licenses/gpl-3.0/
 #* Images CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
 # Optimized for coding with R Studio document outline view
-# Last edited 2025-06-19
+# Last edited 2025-11-18
+
+beta <- -0.350 # From Table 2
 
 # OR to RRR -----
 #* Zhang, 1998 -----
 # http://pubmed.gov/9832001
-beta <- -0.350
 OR  <- exp(beta)
-P0 <- 0.33 # Baseline rate
+P0 <- 0.33 # Baseline rate in Table 1
 
 RR <- OR /(1 - P0 + (P0 * OR)) # Equation of Zhang, 1998 PMID 9832001
 RR
@@ -27,7 +28,7 @@ message(paste0("\033[32m \033[1m Relative risk reduction): ", sprintf(RRR, fmt='
 
 # OR to SMD -----
 #* Murad, 2019 -----
-# https://pubmed.ncbi.nlm.nih.gov/30670455/
+# https://pubmed.gov/30670455/
   # Murad et al
 OR  <- exp(beta)
 SMD <- log(OR) / (pi/sqrt(3)) # R uses 'log' for ln
@@ -35,7 +36,7 @@ message(paste0("\033[32m \033[1m Standardized mean difference (SMD): ", sprintf(
 
 # OR to ARR (absolute risk reduction) -----
 #* Murad, 2019 -----
-# https://pubmed.ncbi.nlm.nih.gov/30670455/
+# https://pubmed.gov/30670455/
 # Murad et al
 OR  <- exp(beta)
 CER <- PO <- 0.33 # control event rate, "(that is, baseline risk)"
