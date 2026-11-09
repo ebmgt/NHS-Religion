@@ -14,6 +14,9 @@ packages_open_office <- c('openxlsx','htmltools')
 function_libraries_install(packages_open_office)
 function_progress(30,'Libraries')
 
-packages_analyses <- c('betarg')
+packages_analyses <- c('betareg')
 function_libraries_install(packages_analyses)
 function_progress(40,'Libraries')
+
+function_progress(100,'Libraries')
+
